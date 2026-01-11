@@ -1,0 +1,20 @@
+name = "navigation"
+main = "src/server.js"
+compatibility_date = "2025-01-15"
+
+# 环境变量
+[vars]
+ADMIN_PASSWORD="domino"
+
+# KV存储绑定（可选 - 用于存储用户自定义导航数据）
+[[kv_namespaces]]
+binding = "NAVIGATION_KV"
+id = "ecfcc2a378104980ba862e2e99a4b22a"
+# preview_id = "your_preview_kv_namespace_id"
+
+# 静态资源目录配置 - 兼容Wrangler 4.x
+[assets]
+directory = "public"
+binding = "ASSETS"
+
+
